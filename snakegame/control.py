@@ -1,3 +1,2 @@
-class controller:
-    def getkey(self):
-        pass
+class Controller:
+    pass
