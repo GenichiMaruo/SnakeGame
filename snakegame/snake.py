@@ -69,6 +69,9 @@ class Snake:
             seg = segment.update()
             if seg is not None:
                 self.body.remove(segment)
+    
+    def getscore(self):
+        return self.length - 4
 
 class Segment:
     def __init__(self, x, y, direction, lifetime, ishead=True):
@@ -84,7 +87,7 @@ class Segment:
         if self.isdraw == False:
             if self.ishead:
                 self.body = Circle(Point(self.x, self.y), 10)
-                self.body.setFill("orange")
+                self.body.setFill("pink")
             else:
                 self.body.undraw()
                 self.body.setFill("green")

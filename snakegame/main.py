@@ -18,7 +18,7 @@ def main():
                 if food.is_eaten(snake):
                     food.spawn(snake)
                     snake.eat()
-            # 1/60秒待つ
+            # 1/6秒待つ
             view.window.after(1000//6)
     except Exception as e:
         print(e)
