@@ -21,7 +21,7 @@ def main():
             # 1/6秒待つ
             view.window.after(1000//6)
     except Exception as e:
-        print(e)
+        view.gameover()
         view.window.getMouse()
     finally:
         view.close()
