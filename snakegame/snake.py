@@ -86,11 +86,13 @@ class Segment:
     def draw(self, window):
         if self.isdraw == False:
             if self.ishead:
-                self.body = Circle(Point(self.x, self.y), 10)
+                self.body = Circle(Point(self.x, self.y), 11)
                 self.body.setFill("pink")
+                self.body.setOutline("black")
             else:
                 self.body.undraw()
                 self.body.setFill("green")
+                self.body.setOutline("green")
                 self.isdraw = True
             self.body.draw(window)
 
